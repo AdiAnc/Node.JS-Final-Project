@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+       <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+<style>
+p.solid {border: 2px solid rebeccapurple;border-radius: 5px }
+div {border: 1px solid black !important;border-radius: 5px,}
+h2 {font-family: "Times New Roman", Times, serif} 
+</style>
+
+    <body>
+
+        <h1>All Members</h1>
+        
+        
+        
+        <ul>
+        
+            <% allmembers.forEach(function(member) { %> 
+                <div>
+                
+              <h2>
+                  <%= member.name%><br>
+                </h2>
+               Email :  <%= member.email%> , <br>
+                City:<%= member.city%> ,<br><br>
+                <br>
+                
+                
+                
+                
+                
+                
+                <a href="/members/edit/<%=member.id%>">Edit <%=member.name%> </a><br>
+                <a href="/members/delete/<%=member.id%>">Delete<%=member.name%> </a><br><br>
+                
+                                <form action="/members/addsubscreption">
+                                    <input type="submit" value="Subscribe to a new movie"/>
+                                </form>
+                
+                <% if(member.movies) { %>
+                    
+                        Movies Watched:  <br><br>
+                    
+                    <% member.movies.forEach(function(movie) { %> 
+                        <li class="solid">
+                            <%=movie.date%><br>
+                            <%=movie.title%><br>
+                        </li><br>
+                        <% }) %> 
+                        <% } %>
+                        
+                      
+                        
+                    </div>                    
+                    <br> <br> <br> <br>
+                        <% }) %> 
+                        <br> <br>
+                    </ul>
+                </body>
+    </html>
+
+
+    
+   

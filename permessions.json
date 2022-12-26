@@ -1,0 +1,13 @@
+
+{"data": 
+    [
+        {   "_Id": "62de502078e8ce0bda97a46e",
+            "permession": ["View Subscriptions","Create Subscriptions","Delete Subscriptions","View Movies","Create Movies", "Delete Movies"]
+        }
+    ,
+        {   "_Id": "62d54652982bed4574869188",
+            "permession": ["View Subscriptions","Create Subscriptions","Delete Subscriptions","View Movies","Create Movies"]
+    }
+
+    ]   
+}

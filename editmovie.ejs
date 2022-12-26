@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<form action="/movies/edit/<%=moviedata.id%>" method="POST">
+<h1>Edit Movie : <%= moviedata.name %> </h1> <br/>
+<img src="<%= moviedata.image.medium%>"><br><br>
+
+Name :  <input value="<%=moviedata.name%>" name = "name" input type="text" /><br/>
+Genres:<input value="<%=moviedata.genres%>"name = "genres" input type="text"/><br/>
+Image Url:<input value="<%=moviedata.image%>" name = "image" input type="text"/><br/>
+Premired: <input value="<%=moviedata.premiered%>" name = "premiered" input type="text"/><br/>
+<input type="submit" value="Update"> <br/>
+
+</form>
+
+</body><br>
+
+<form action="/movies/all">
+    <input type="submit" value="Cancel"/>
+</form>
+
+</html>

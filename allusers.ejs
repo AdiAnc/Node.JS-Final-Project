@@ -1,0 +1,23 @@
+
+<html>
+
+    <h1>All Users</h1>
+   
+    <ul>
+            <% allUsers.forEach(function(user) { %> 
+              
+               Name : <%= user.userName%> <br>
+               Session Time Out : <%= user.SessionTimeOut%> <br>
+               Created Data: <%= user.createddate%><br>
+               Permissions :<%= user.permession%>
+               <%= user.password%> , <br>
+               <br>
+               <br>
+        <% }) %>
+    </ul>
+    </html>
+
+
+
+    
+   

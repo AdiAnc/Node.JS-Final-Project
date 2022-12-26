@@ -1,0 +1,22 @@
+
+{"users": 
+    [
+        {    
+            "_Id": "62de502078e8ce0bda97a46e",
+            "fname": "omer",
+            "lname": "moshe",
+            "createddate": "11/12/2020",
+            "SessionTimeOut": "60"
+        }
+    ,  
+            {    
+                "_Id": "62d54652982bed4574869188",
+                "fname": "adi",
+                "lname": "ancelovits",
+                "createddate": "13/05/22",
+                "SessionTimeOut": "5"
+            }
+
+    ] 
+
+}

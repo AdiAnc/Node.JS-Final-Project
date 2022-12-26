@@ -1,0 +1,23 @@
+<html>
+
+<body>
+<form action="/members/edit/<%=memberData.id%>" method="POST">
+<h1>Edit Memeber : <%= memberData.name %> </h1> <br/>
+
+Name :  <input value="<%=memberData.name%>" name = "name" input type="text" /><br/>
+Email :  <input value="<%=memberData.email%>" name = "email" input type="text" /><br/>
+City :  <input value="<%=memberData.city%>" name = "city" input type="text" /><br/>
+
+ 
+
+<input type="submit" value="Update"> <br/>
+
+</form>
+
+</body><br>
+
+<form action="/members/all">
+    <input type="submit" value="Cancel"/>
+</form>
+
+</html>

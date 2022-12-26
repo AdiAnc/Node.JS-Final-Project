@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+      
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    </head>
+    <h1>All movies </h1>
+   
+    <ul>
+
+            <% allmovies.forEach(function(movie) { %> 
+               <p style="border:2px">
+
+                 <%= movie.name%> ,<br>
+                 <%= movie.premiered%> ,<br>
+                 <%= movie.genres%> , <br>
+                 
+                 <img src="<%= movie.image%>"><br><br>
+                 
+                 <a href="/movies/edit/<%=movie._id%>">edit <%=movie.name%> </a><br><br><br>
+                 
+                 
+                 <% }) %> 
+                 
+                </p>
+              
+
+    </ul>
+    </html>
+
+
+
+    
+   
